@@ -17,7 +17,7 @@ spec:
       labels:
         app: kibana
       annotations:
-        seccomp.security.alpha.kubernetes.io/pod: 'docker/default'
+        seccompProfile/pod: 'docker/default'
     spec:
       containers:
       - name: kibana
